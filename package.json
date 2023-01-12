@@ -11,8 +11,8 @@
     "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/dist",
-    "build:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/dist"
+    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js/dist",
+    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/dist"
   },
   "author": "Segun Oregunwa",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "@babel/polyfill": "^7.12.1",
     "axios": "^1.2.2",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
